@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Deno: run" type="DenoConfigurationType" inputPath="$PROJECT_DIR$/src/index.ts" programParameters="run --allow-net --allow-read --unstable --allow-env">
+  <configuration default="false" name="Deno: run" type="DenoConfigurationType" inputPath="$PROJECT_DIR$/src/index.ts" programParameters="run --allow-net --allow-read --unstable --allow-env --allow-sys --allow-ffi">
     <option name="applicationArguments" value="&quot;this is test from api call&quot;" />
     <method v="2" />
   </configuration>

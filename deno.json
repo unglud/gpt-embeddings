@@ -1,5 +1,0 @@
-{
-    "imports": {
-        "langchain/": "https://esm.sh/langchain@0.0.125/"
-    }
-}
