@@ -1,9 +1,6 @@
-### Deno template
 /.idea/
 /.vscode/
-
 /node_modules
-
 .env
 *.orig
 *.pyc

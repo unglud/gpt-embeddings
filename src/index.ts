@@ -1,26 +1,50 @@
-import { config } from "https://deno.land/x/dotenv/mod.ts";
-import { OpenAI } from "https://esm.sh/langchain/llms/openai";
-// import { PromptTemplate } from "https://esm.sh/langchain/prompts";
-import { BufferMemory } from "https://esm.sh/langchain/memory";
-import { ConversationChain } from "https://esm.sh/langchain/chains";
+/*import { config } from "https://deno.land/x/dotenv/mod.ts";
+import { ChatOpenAI } from "langchain/chat_models/openai";
+import { BufferMemory } from "langchain/memory";
+import { LLMChain } from "langchain/chains";
+import {
+  ChatPromptTemplate,
+  HumanMessagePromptTemplate,
+  SystemMessagePromptTemplate,
+} from "langchain/prompts";*/
+import { GithubRepoLoader } from "langchain/document_loaders/web/github";
+
+const loader = new GithubRepoLoader(
+  "https://github.com/unglud/gpt-embeddings",
+  { ignorePaths: [".run"] },
+);
+const docs = await loader.load();
+console.log({ docs });
+
+/*const systemMessagePrompt = SystemMessagePromptTemplate.fromTemplate(
+  "You are a helpful assistant that translates {input_language} to {output_language}.",
+);
+const humanMessagePrompt = HumanMessagePromptTemplate.fromTemplate("{text}");
+
+const prompt = ChatPromptTemplate.fromPromptMessages([
+  systemMessagePrompt,
+  humanMessagePrompt,
+]);
 
 const env = config();
 const openAIApiKey = env.OPENAI_KEY;
 
-const llm = new OpenAI({
+const llm = new ChatOpenAI({
   openAIApiKey,
   temperature: 0.9,
 });
 
-const memory = new BufferMemory();
-
-const chain = new ConversationChain({
+const chain = new LLMChain({
   llm,
-  memory,
+  prompt,
+  memory: new BufferMemory(),
   verbose: true,
 });
 
-await chain.call({ input: "Hi! I'm Jim." });
-const res2 = await chain.call({ input: "What's my name?" });
+const response = await chain.call({
+  input_language: "English",
+  output_language: "French",
+  text: "I love programming",
+});
 
-console.log(`result`, res2);
+console.log(`result`, response);*/

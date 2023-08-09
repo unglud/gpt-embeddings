@@ -1,0 +1,22 @@
+{
+  "version": "2",
+  "remote": {
+    "https://esm.sh/langchain@0.0.125/document_loaders/web/github": "68a07b7eb24cf62729e62bc7a699655a054f4e96af03829e15bf8e32db314951",
+    "https://esm.sh/v130/ansi-styles@5.2.0/denonext/ansi-styles.mjs": "8a10e68165432fcfd0929bdeb4e33a194af8b790702f60b2ea0477749990964c",
+    "https://esm.sh/v130/base64-js@1.5.1/denonext/base64-js.mjs": "fc961905a7e7a9a1c753f006903a610306d299569a0b3af9c48318a28ac48b84",
+    "https://esm.sh/v130/binary-extensions@2.2.0/denonext/binary-extensions.mjs": "4e8e9f82056eb7172c40ccae21ce67a0261a6b7840b614bd056f5021d56b65b3",
+    "https://esm.sh/v130/camelcase@6.3.0/denonext/camelcase.mjs": "ac0c366a0afa66cdf9eab2f6e188e0d86fce8d59d410e9642b216c1548b1c35f",
+    "https://esm.sh/v130/decamelize@1.2.0/denonext/decamelize.mjs": "504737df810416c264e5b908664fcce90aa57500ef725b262a8bea0ccb7f8e14",
+    "https://esm.sh/v130/eventemitter3@4.0.7/denonext/eventemitter3.mjs": "6f8a6195e1a9effb73bb163c577400d608dec7c4e0bd839045fd9ea4db66e9fe",
+    "https://esm.sh/v130/ignore@5.2.4/denonext/ignore.mjs": "988d7a35ff1fa9290d0ccc7de52f13654241ed5c0f256c4934c8d7e553640c84",
+    "https://esm.sh/v130/js-tiktoken@1.0.7/denonext/lite.js": "2bec402f84e7845a66838a200c04386d1b3ae48bc3bb148d4206d707d72bcc1f",
+    "https://esm.sh/v130/langchain@0.0.125/denonext/document_loaders/web/github.js": "d8713b167407d7926061c08ce2129150e010a8455748c9d41e1c4af3f520a586",
+    "https://esm.sh/v130/langsmith@0.0.17/denonext/langsmith.mjs": "141fc2355fc53d4f4b0e2ff85d5f13ed0780f70cd2a2383502fb343b220a6a71",
+    "https://esm.sh/v130/p-finally@1.0.0/denonext/p-finally.mjs": "5ad31f91b28a49a738260a79a0be34bf64bcd03ee7909350dd0227e573eae781",
+    "https://esm.sh/v130/p-queue@6.6.2/denonext/p-queue.mjs": "bba616862dfdb171784a6b6a90745fa9ab314cdcd0717624271a0b02055a865a",
+    "https://esm.sh/v130/p-retry@4.6.2/denonext/p-retry.mjs": "32acc9b17ea8313cb10631457263517db5f120e71d737fcc5eb414c9a940d40b",
+    "https://esm.sh/v130/p-timeout@3.2.0/denonext/p-timeout.mjs": "14b5b6bb9d6f834bc4f407dbcd997bb7502e65def36e86ccf70e26e41e7983e5",
+    "https://esm.sh/v130/retry@0.13.1/denonext/retry.mjs": "0d9e9d51789f08a5d07d34e16693a133f0faaca52379af8639c682370b6c5ad7",
+    "https://esm.sh/v130/uuid@9.0.0/denonext/uuid.mjs": "ac96be3c985ecc0f0a14dfe23d6ec8d37b2360e9a331f3330d557b7f5210aa53"
+  }
+}
