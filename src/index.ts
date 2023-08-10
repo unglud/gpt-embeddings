@@ -2,20 +2,19 @@ import { openAIApiKey } from "./env.ts";
 import getStore from "./store.ts";
 import loadGitHub from "./loaders/github.ts";
 
-import { OpenAI } from "https://esm.sh/v130/langchain@0.0.125/llms/openai";
+//import { OpenAI } from "https://esm.sh/v130/langchain@0.0.125/llms/openai";
 import { OpenAIEmbeddings } from "https://esm.sh/v130/langchain@0.0.125/embeddings/openai";
-import { RetrievalQAChain } from "https://esm.sh/v130/langchain@0.0.125/chains";
+// import { RetrievalQAChain } from "https://esm.sh/v130/langchain@0.0.125/chains";
 
 const docs = await loadGitHub();
 //console.log("docs", docs);
 
-const model = new OpenAI({ openAIApiKey });
+//const model = new OpenAI({ openAIApiKey });
 const embeddings = new OpenAIEmbeddings({ openAIApiKey });
 
 // Load the docs into the vector getStore.ts
-const vectorStore = getStore(embeddings);
-await vectorStore.addDocuments(docs);
-
+const _vectorStore = await getStore(embeddings, docs);
+/*
 // Initialize a retriever wrapper around the vector store
 const vectorStoreRetriever = vectorStore.asRetriever();
 
@@ -26,3 +25,4 @@ const res = await chain.call({
 });
 
 console.log(`res`, res);
+*/
