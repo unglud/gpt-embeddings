@@ -93,8 +93,8 @@ export class MyCallbackHandler extends BaseCallbackHandler {
     console.log(`Entering new ${chain.id} chain...`, chain);
   }
 
-  handleChainEnd(output: ChainValues) {
-    console.log("Finished chain.", output);
+  handleChainEnd(_output: ChainValues) {
+    console.log("Finished chain.", _output);
   }
 
   handleAgentAction(action: AgentAction) {
